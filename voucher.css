@@ -1,71 +1,199 @@
-* {
+.border-box {
+    width: 1121px;
+    height: 900px;
+    border: 2px solid #eceef3;
+    padding: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.voucher {
+    display: inline-flex;
+    gap: 5px;
+    margin-top: 50px;
+    font-family: 'Poppins';
+}
+
+.date {
+    margin-top: -9px;
+    margin-bottom: 45px;
+}
+ 
+.voucher2 {
+    display: inline-flex;
+    gap: 1px;
+}
+
+.voucher3 {
+    display: inline-flex;
+    gap: 1px;
+}
+
+.code {
+    display: inline-flex;
+    gap: 12px;
+}
+
+.code2 {
+    display: inline-flex;
+    gap: 15px;
+}
+
+
+.text{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #364a63
+}   
+
+.text2{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    color: #d80e0e;
+}
+
+
+.container {
+    width: 80%;  
+    margin: 0 auto;
+}
+
+.header{
+    color: #d80e0e!important;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.table-text{
+    color: #526484 !important;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'poppins';
+}
+.grand{
+    font-weight: 500;
+    color: #526484 !important;
+     font-weight: bolder;
+     font-family: 'Poppins';
+}
+
+.raised{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #424c5a;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.name{
+    text-transform: capitalize;
+    color: #424c5a;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.funds{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #424c5a;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.bank{
+    color: #94352d;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.bank2{
+    text-transform: uppercase;
+    color: #364a63;
+    font-family: 'Poppins';
+}
+
+.approve{
+    text-transform: capitalize;
+    color: #424c5a;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.box {
+    border: 1px solid #364a63;
+    text-align: center;
+    width: 50px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: 'poppins' !important;
+    height: 20px;
+    font-size: 12px;
+    color: #364a63 !important;
+    font-family: 'poppins'; 
+    box-shadow: 0px 0px 2px #424c5a
+}
+
+.ledger{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    color: #424c5a !important;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.number{
+    font-family: 'Poppins';
+    color: #526484 !important;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.maple{
+    font-family: 'Poppins';
+    color: #526484!important;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+.table{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.list{
+    text-transform: capitalize;
+    color: #424c5a;
+    font-family: 'poppins';
+    font-weight: bold;
     font-size: 15px;
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 20px;
+.names{
+    text-transform: capitalize;
+    color: #424c5a;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 13px;
 }
 
-.data {
-    margin-bottom: 15px;
+.date{ 
+    color: #424c5a;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
 }
 
-.data2 {
-    display: inline-flex;
-    gap: 200px;
+.table-bordered{
+    border: 2px solid #eceef3 ;
 }
-
-.dotted-line {
-    border-bottom: 2px dotted black;
-    width: 10%;
-    margin-bottom: 50px;
-}
-
-.table {
-    width: 100%;
-}
-
-.description {
-    font-weight: 300; 
-    padding-left: 50px !important;
-}
- 
-.amount{
-    font-weight: 300;
-}
- 
-.total{
-    padding-left: 100px !important;
-}
-
-.num{
-    padding-left: 20px !important;
-}
-
-.text{
-    padding-left: 50px !important;
-}
-
-@media (max-width: 576px) {
-    .data, .data2 {
-        font-size: 14px;
-    }
-    .header {
-        font-size: 18px;
-    }
-    .dotted-line {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1320px;
-    }
-}
- 
