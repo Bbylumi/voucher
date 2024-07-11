@@ -6,19 +6,247 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+        .border-box {
+            width: 1121px;
+            border: 2px solid #eceef3;
+            padding: 20px;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="Voucher.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-T8+TcBW6P6C9JUZ1b0kHqyydZkNmpUuA6nnYpHJ7w7dCCnIGkOxwB4h3zazphLJij/whDAF0VGwwFRIH8Erhcg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"   />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        .voucher { 
+            gap: 5px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            margin-top: -9px;
+            margin-bottom: 45px;
+        }
+
+         
+        .voucher3 {
+            margin-top: 30px;
+        }
+ 
+
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #364a63
+        }
+
+        .text2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #d80e0e;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            color: #d80e0e !important;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .table-text {
+            color: #526484 !important;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grand {
+            font-weight: 500;
+            color: #526484 !important;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .raised {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .name {
+            text-transform: capitalize;
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 7px;
+        }
+
+        .funds {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: -10px;
+            margin-top: 32px;
+        }
+
+        .bank {
+            color: #94352d;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .bank2 {
+            text-transform: uppercase;
+            color: #364a63;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .ledger {
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #424c5a !important;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .number {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #526484 !important;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .maple {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #526484 !important;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-top: -10px;
+        }
+
+
+        .section {
+            margin-top: 42px;
+            line-height: 35px;
+        }
+
+        .approval-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            margin-top: 11px;
+        }
+
+        .approve-text {
+            text-transform: uppercase;
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .approver-name {
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .status-box {
+            border: 1px solid #364a63;
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 12px;
+            color: #364a63;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0px 2px 4px 364a63(0, 0, 0, 0.1);
+        }
+
+        .table {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .list {
+            text-transform: capitalize;
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .names {
+            text-transform: capitalize;
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .date {
+            color: #424c5a;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            margin-top: 70px;
+        }
+
+        .table,
+        th.header {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .table,
+        td.table-text {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+
+
+        .table,
+        td.grand {
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .Approval {
+            line-height: 35px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,8 +256,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="voucher">
-                        <p class="text">Voucher</p>
-                        <p class="text2">#MEL/2024/07/350/0004</p>
+                        <span class="text">Voucher</span>
+                        <span class="text2">#MEL/2024/07/350/0004</span>
                     </div>
                 </div>
             </div>
@@ -48,41 +276,41 @@
                 <div>
                     <p class="funds">funds disbursed from</p>
                     <div class="voucher3">
-                        <p class="bank">Bank
-                        <p class="bank2">- 0008908350 sterling bank plc</p>
+                        <span class="bank">Bank</span>
+                        <span class="bank2">- 0008908350 sterling bank plc</span>
                     </div>
                 </div>
-                <div>
-                    <div class="code2">
-                        <p class="approve">Approved by:</p>
-                            <p class="approve">Tukeni Obasi </p> 
-                        <div class="box">
-                            PAID
-                        </div>
+                <div class="approval-section">
+                    <span class="approve-text">Approved by:</span>
+                    <span class="approver-name">Tukeni Obasi</span>
+                    <div class="status-box">
+                        PAID
                     </div>
                 </div>
-                <div class="code">
-                    <p class="ledger">ledger code:</p>
-                    <p class="number">6172</p>
-                </div>
-                <div>
-                    <p class="ledger">beneficiary name :
-                    <p class="maple">maple staff</p>
-                </div>
-                <div>
-                    <div class="code">
-                        <p class="ledger">date raised:</p>
-                        <p class="number">25/6/2024</p>
+                <div class="section">
+
+                    <span class="ledger">ledger code:</span>
+                    <span class="number">6172</span>
+
+                    <div>
+                        <span class="ledger">beneficiary name :</span>
+                        <span class="maple">maple staff</span>
                     </div>
-                </div>
-                <div class="code">
-                    <p class="ledger">date disbursed:</p>
-                    <p class="number">
+                    <div>
+
+                        <span class="ledger">date raised:</span>
+                        <span class="number">25/6/2024</span>
+                    </div>
+
+
+                    <span class="ledger">date disbursed:</span>
+                    <span class="number">
                         25/6/2024
-                    </p>
+                    </span>
+
                 </div>
                 <div>
-                    <table class="table table-bordered">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th class="header">VOUCHER CODE</th>
@@ -112,28 +340,30 @@
                 </div>
                 <div>
                     <h5 class="list">List of Approval(s)</h5>
-                    <div>
-                        <div class="code">
-                            <p class="names">Oluwakemi Stephen:</p>
-                            <p class="number">Reviewed voucher</p>
+                    <div class="Approval">
+                        <div>
+                            <div class="code">
+                                <span class="names">Oluwakemi Stephen:</span>
+                                <span class="number">Reviewed voucher</span>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="code">
-                            <p class="names">Olukoya Temitope:</p>
-                            <p class="number">Approved voucher</p>
+                        <div>
+                            <div class="code">
+                                <span class="names">Olukoya Temitope:</span>
+                                <span class="number">Approved voucher</span>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="code">
-                            <p class="names">Tukeni Obasi:</p>
-                            <p class="number">Approved voucher</p>
+                        <div>
+                            <div class="code">
+                                <span class="names">Tukeni Obasi:</span>
+                                <span class="number">Approved voucher</span>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="code">
-                            <p class="names">Akanni Samuel:</p>
-                            <p class="number">Processed payment</p>
+                        <div>
+                            <div class="code">
+                                <span class="names">Akanni Samuel:</span>
+                                <span class="number">Processed payment</span>
+                            </div>
                         </div>
                     </div>
                 </div>
